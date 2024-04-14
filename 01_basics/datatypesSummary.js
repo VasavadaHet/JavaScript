@@ -38,8 +38,8 @@ console.log(typeof bigNumber);
 /* ******************** Memories *************** */
 
 // Stack (Primitives), Heap (Non Primitives)
-// In stack you get copy of the variable declared
-// In heap you get reference of that
+// In stack you get copy of the variable declared (deep copies)
+// In heap you get reference of that (shallow copies)
 
 let myYoutubeName = "vasavada.com"
 
