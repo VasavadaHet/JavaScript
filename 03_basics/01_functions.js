@@ -39,4 +39,41 @@ function loginUserMessage(username = "sam") {       //we can also set default va
     return `${username}, just logged in`
 }
 // console.log(loginUserMessage("Vasavada"));
-console.log(loginUserMessage(""));
+// console.log(loginUserMessage(""));
+
+
+function calCartPrice(...num){                    /* ... is a rest operator which becomes helpful when we are not sure how many values 
+                                                        the user will enter in arguement,such as the shoping cars*/
+return num
+}
+// console.log(calCartPrice(100, 200, 300, 400));    // it will return an array with all the arguments passed in the function....
+
+
+//working with objects and functions
+const user ={
+    username: 'Het',
+    price: 199
+}
+
+function handleObject(anyObject){
+    console.log(`Username is: ${anyObject.username} and Price is: ${anyObject.price}`);
+}
+
+// handleObject(user)
+
+// You can also pass the object directly
+// handleObject({
+//     username: 'Vasavada',
+//     price: 299
+// })
+
+
+// Working with arrays and functions
+
+const myNewArray = [100, 200, 330, 440]
+
+function secondElement(getArray){
+    return getArray[2]
+}
+// console.log(secondElement(myNewArray))
+// console.log(secondElement([100,200,330,440])) // dirct declare also possible
